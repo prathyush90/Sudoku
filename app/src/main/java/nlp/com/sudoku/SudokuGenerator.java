@@ -133,15 +133,32 @@ public class SudokuGenerator {
         double remainingSquares = 81;
         double remainingHoles = (double) holesToMake;
 
-        for (int i = 0; i < 9; i++)
-            for (int j = 0; j < 9; j++) {
-                double holeChance = remainingHoles / remainingSquares;
-                if (Math.random() <= holeChance) {
-                    board[i][j] = 0;
-                    remainingHoles--;
-                }
-                remainingSquares--;
+        while (remainingHoles>0)
+        {
+            int pos = new Random().nextInt(81)+0;
+            int x = pos/9;
+            int y = pos % 9;
+            if(board[x][y] != 0)
+            {
+                board[x][y] = 0;
+                remainingHoles--;
             }
+        }
+
+//        for (int i = 0; i < 9; i++)
+//            for (int j = 0; j < 9; j++) {
+//
+//                while(remainingHoles>0)
+//                {
+//
+//                }
+//                double holeChance = remainingHoles / remainingSquares;
+//                if (Math.random() <= holeChance) {
+//                    board[i][j] = 0;
+//                    remainingHoles--;
+//                }
+//                remainingSquares--;
+//            }
     }
 
     /**

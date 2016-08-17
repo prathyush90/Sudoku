@@ -2,6 +2,7 @@ package nlp.com.sudoku;
 
 import android.content.DialogInterface;
 import android.database.DataSetObserver;
+import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -245,6 +246,7 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 flag  = 1;
+
                 generateBoard(flag);
                 refreshTexts();
                 attachtextchanged();
@@ -255,6 +257,7 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 flag  = 2;
+
                 generateBoard(flag);
                 refreshTexts();
                 attachtextchanged();
@@ -316,8 +319,21 @@ public class MainActivity extends AppCompatActivity  {
         for(int i=0;i<arrayList.size();i++)
         {
             final int pos = i;
-
+             int x = pos/9;
+            int y = pos % 9;
+            if(!(board[x][y] == 0))
+            {
+                arrayList.get(i).setEnabled(false);
+                arrayList.get(i).setFocusable(false);
+                arrayList.get(i).setBackgroundColor(Color.parseColor("#000000"));
+                arrayList.get(i).setTextColor(Color.parseColor("#FFFFFF"));
+                continue;
+            }
             arrayList.get(i).addTextChangedListener(mTextWatcher);
+            arrayList.get(i).setFocusable(true);
+            arrayList.get(i).setEnabled(true);
+            arrayList.get(i).setBackgroundColor(Color.parseColor("#FFFFFF"));
+            arrayList.get(i).setTextColor(Color.parseColor("#000000"));
             //arrayList.get(i).setFocusable(false);
         }
     }
@@ -346,7 +362,7 @@ public class MainActivity extends AppCompatActivity  {
     public void generateBoard(int flag)
     {
         Random rn = new Random();
-        int difficulty = (flag == 0 )? rn.nextInt(21) + 32 : (flag == 1) ? rn.nextInt(5)+27 : rn.nextInt(6)+21;
+        int difficulty = (flag == 0 )? rn.nextInt(5) + 15 : (flag == 1) ? rn.nextInt(20)+20 : rn.nextInt(20)+40;
 
         SudokuGenerator sg = new SudokuGenerator();
         sg.nextBoard(difficulty);
