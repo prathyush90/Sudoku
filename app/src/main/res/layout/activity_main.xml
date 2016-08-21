@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:layout_marginTop="10dp"
-        android:background="#000">
+        android:background="#EF5350">
 
     </View>
 
@@ -107,7 +107,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -146,7 +146,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s7"
@@ -229,7 +229,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -268,7 +268,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s16"
@@ -347,7 +347,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -386,7 +386,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s25"
@@ -428,7 +428,7 @@
         android:layout_below="@+id/thirdrow"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#212121">
+        android:background="#EF5350">
 
     </View>
     <LinearLayout
@@ -473,7 +473,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -512,7 +512,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s34"
@@ -595,7 +595,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -634,7 +634,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s43"
@@ -713,7 +713,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -752,7 +752,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s52"
@@ -794,7 +794,7 @@
         android:layout_below="@+id/seventhrow"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#212121">
+        android:background="#EF5350">
 
     </View>
     <LinearLayout
@@ -839,7 +839,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -878,7 +878,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s61"
@@ -961,7 +961,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -1000,7 +1000,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s70"
@@ -1079,7 +1079,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent">
 
         </View>
@@ -1118,7 +1118,7 @@
         </EditText>
         <View
             android:layout_width="3dp"
-            android:background="#212121"
+            android:background="#EF5350"
             android:layout_height="match_parent"/>
         <EditText
             android:id="@+id/s79"
@@ -1160,7 +1160,7 @@
         android:layout_below="@+id/elevrow"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#212121">
+        android:background="#EF5350">
 
     </View>
 

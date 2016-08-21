@@ -277,12 +277,16 @@ public class MainActivity extends AppCompatActivity  {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
+
+
+
+
         }
 
         @Override
         public void afterTextChanged(Editable s) {
 
-            if(!TextUtils.isEmpty(s))
+            if(!TextUtils.isEmpty(s) && arrayList.size() >0)
             {
                 int pos = 0;
                 for(int i=0;i<arrayList.size();i++)
@@ -324,13 +328,14 @@ public class MainActivity extends AppCompatActivity  {
             if(!(board[x][y] == 0))
             {
                 arrayList.get(i).setEnabled(false);
-                arrayList.get(i).setFocusable(false);
+                // arrayList.get(i).setFocusable(false);
                 arrayList.get(i).setBackgroundColor(Color.parseColor("#000000"));
                 arrayList.get(i).setTextColor(Color.parseColor("#FFFFFF"));
                 continue;
             }
+
             arrayList.get(i).addTextChangedListener(mTextWatcher);
-            arrayList.get(i).setFocusable(true);
+            //arrayList.get(i).setFocusable(true);
             arrayList.get(i).setEnabled(true);
             arrayList.get(i).setBackgroundColor(Color.parseColor("#FFFFFF"));
             arrayList.get(i).setTextColor(Color.parseColor("#000000"));
